@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+section {
+  background-color: #8FDAB6;
+  height: 100vh;
+}
+
+section.color-2 {
+  background-color: #F92222;
+}
+
+section.color-3 {
+  background-color: #4D11FA;
+}
+
+section.color-4 {
+  background-color: #CDCDCD;
+}
+
+section.color-5 {
+  background-color: #D9942C;
+}
+
+img {
+  position: fixed;
+  background: none;
+}
+
+img.sun {
+  left: 40%;
+  top: 8em;
+}
+
+img.sun:hover {
+  /*background: yellow;*/
+  background: radial-gradient(white, yellow, orange);
+  transition-duration: .8s;
+  transform: rotate(420deg);
+  transition-property: transform, background;
+}
+
+img.rain {
+  right: 20em;
+  top: 14em;
+}
+
+img.rain:hover {
+  transition-duration: 1s;
+  transform: skew(30deg, 20deg);
+  transition-property: transform;
+}
+
+img.cloud {
+  left: 20em;
+  bottom: 10em;
+}
+
+img.cloud:hover {
+    transition-duration: 2s;
+    transform: scale(1.5, 0.5);
+    /*transform: rotate(180deg);*/
+    transition-property: transform;
+  }
